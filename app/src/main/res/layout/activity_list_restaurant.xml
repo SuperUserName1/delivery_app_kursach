@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Список ресторанов"
+        android:textAlignment="center"
+        android:textColor="#388F15"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <LinearLayout
+        android:id="@+id/llRestaurants"
+        android:layout_width="411dp"
+        android:layout_height="619dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/item1"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/black_green"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onItemClick"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="86dp"
+                android:layout_height="88dp"
+                android:background="@drawable/image_border"
+                android:clipToOutline="true"
+                android:contentDescription="Изображение ресторана"
+                android:src="@drawable/logo_lm" />
+
+            <TextView
+                android:id="@+id/tvItem1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:padding="20sp"
+                android:text="Жизнь март\nАдрес: ул. Центральная, кв. 5\nЧасы: 8:00 - 22:00"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item2"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/black_green"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onItemClick"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="87dp"
+                android:layout_height="90dp"
+                android:background="@drawable/image_border"
+                android:clipToOutline="true"
+                android:contentDescription="Изображение ресторана"
+                android:src="@drawable/piterechka" />
+
+            <TextView
+                android:id="@+id/tvItem1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:padding="20sp"
+                android:text="Пятерочка\nАдрес: ул. Пушкина, кв. 2\nЧасы: 8:00 - 22:00"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item3"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/black_green"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onItemClick"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="93dp"
+                android:layout_height="95dp"
+                android:background="@drawable/image_border"
+                android:clipToOutline="true"
+                android:contentDescription="Изображение ресторана"
+                android:src="@drawable/dodo_piza" />
+
+            <TextView
+                android:id="@+id/tvItem1"
+                android:layout_width="261dp"
+                android:layout_height="101dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:padding="20sp"
+                android:text="ДоДо пица\nАдрес: ул. Советская, кв. 9\nЧасы: 8:00 - 22:00"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item4"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/black_green"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onItemClick"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="104dp"
+                android:layout_height="84dp"
+                android:background="@drawable/image_border"
+                android:clipToOutline="true"
+                android:contentDescription="Изображение ресторана"
+                android:src="@drawable/mcdonolds" />
+
+            <TextView
+                android:id="@+id/tvItem1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:padding="20sp"
+                android:text="Вкусно и точка\nАдрес: ул. Победы, кв. 6\nЧасы: 8:00 - 22:00"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
