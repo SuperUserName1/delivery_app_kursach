@@ -111,7 +111,8 @@
                 android:background="@drawable/custom_edit_text"
                 android:hint="CVV"
                 android:inputType="numberPassword"
-                android:padding="12dp" />
+                android:padding="12dp"
+                android:maxLength="3"/>
 
             <!-- Добавляем выбор способа получения -->
             <TextView
